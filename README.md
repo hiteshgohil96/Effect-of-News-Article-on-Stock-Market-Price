@@ -264,7 +264,7 @@ plt.savefig('ArticlesOnEachDay.png')
 plt.show()
 
 ```
-![Image of Plot](images/ArticlesOnEachDay.png)
+![ArticlesOnEachDay](https://user-images.githubusercontent.com/47153425/86516638-5d19e400-bdf0-11ea-94fc-bd813e2aba28.png)
 
 ## Setting up text data of the articles for Sentiment Analysis
 Changing the words in the articles to lower case
@@ -407,7 +407,8 @@ sb.lineplot(x = dummy_News.index, y = dummy_News['compound'])
 plt.savefig('CompoundScoreVSdate.png')	
 plt.show()
 ```
-![Image of Plot](images/sentimentVsDate.png)
+![sentimentVsDate](https://user-images.githubusercontent.com/47153425/86516642-66a34c00-bdf0-11ea-99c0-b2d4b7784dd8.png)
+
 ## Visualzing the stocks data
 
 Setting the magic commands
@@ -426,7 +427,8 @@ layout ={ 'title' : 'APPLE STOCK IN LAST MONTH',
 fig = dict(data = data, layout = layout)
 py.iplot(fig)
 ```
-![Image of Plot](images/candlestick.png)
+![candlestick](https://user-images.githubusercontent.com/47153425/86516645-6dca5a00-bdf0-11ea-8e75-2594c9f6c8de.png)
+
 Plot only close value
 ```
 close = [go.Scatter( x = stocksDf.index, y = stocksDf['4. close'] )]
@@ -436,7 +438,7 @@ layout = dict(title = 'Closing price')
 fig = dict (data = close, layout = layout)
 py.iplot(fig)
 ```
-![Image of Plot](images/closechart.png)
+![closechart](https://user-images.githubusercontent.com/47153425/86516651-7458d180-bdf0-11ea-9205-c7a496453e27.png)
 
 ## Linking the stocks and News data frames
 
@@ -468,7 +470,7 @@ df.plot(x="date", y="Stock Close Price", ax=ax2, legend=False, color="r")
 ax.figure.legend()
 plt.show()
 ```
-![Image of Plot](images/Comparision.png)
+![Comparision](https://user-images.githubusercontent.com/47153425/86516654-7753c200-bdf0-11ea-98bf-75a5afe79ff0.png)
 
 ## Linear Regression Models for forecasting the stock price for the next day
 
@@ -602,26 +604,27 @@ pct_change(prediction1,prediction2)
 
 There are numerous news sources in the Google API. We will come to know which source has written more about a particular topic. Since the AIP gets updated everyday, the plots changes accordingly showing the number of articles written by a source for that particular day
 
-![Image of Plot](images/ArticlesWrittenBySource.png)
+![ArticlesWrittenBySource](https://user-images.githubusercontent.com/47153425/86516615-247a0a80-bdf0-11ea-9e38-50bee42bdb57.png)
 
 This plot shows how many relevant articles are shown on each day gathered from Google news API.
-![Image of Plot](images/ArticlesOnEachDay.png)
+
+![ArticlesOnEachDay](https://user-images.githubusercontent.com/47153425/86516638-5d19e400-bdf0-11ea-94fc-bd813e2aba28.png)
 
 The analysis of news is done using NLTK and Vader Sentiment which gives compound value of sentiment score on each day. These compounded values are plotted against their respective dates, visualizing the change of sentiment score on daily basis.
 
-![Image of Plot](images/sentimentVsDate.png)
+![sentimentVsDate](https://user-images.githubusercontent.com/47153425/86516642-66a34c00-bdf0-11ea-99c0-b2d4b7784dd8.png)
 
 It is a OHLC plot which shows the variation of the stock price on the daily basis. 
 
-![Image of Plot](images/candlestick.png)
+![candlestick](https://user-images.githubusercontent.com/47153425/86516645-6dca5a00-bdf0-11ea-8e75-2594c9f6c8de.png)
 
 We are interested to see just the closing price of that company's stock on daily basis
 
-![Image of Plot](images/closechart.png)
+![closechart](https://user-images.githubusercontent.com/47153425/86516651-7458d180-bdf0-11ea-9205-c7a496453e27.png)
 
 This plot shows the sentiment score and the closing price. In most of the days, the stock price followed the sentiment score graph indicating a relationship betweeen them. Though there are some point where the stock has reduced even the sentiment score has increased from the previous day indicating there are other factors that affect the stock prices.
 
-![Image of Plot](images/Comparision.png)
+![Comparision](https://user-images.githubusercontent.com/47153425/86516654-7753c200-bdf0-11ea-98bf-75a5afe79ff0.png)
 
 ## Linear Regression Model Results:
 
