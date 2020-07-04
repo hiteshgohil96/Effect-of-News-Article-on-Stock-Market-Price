@@ -243,7 +243,7 @@ sb.barplot( x = yz['description'], y = yz.index)
 plt.savefig('ArticlesWrittenBySource.png')	
 plt.show()
 ```
-![Image of Plot](images/ArticlesWrittenBySource.png)
+![ArticlesWrittenBySource](https://user-images.githubusercontent.com/47153425/86516615-247a0a80-bdf0-11ea-9e38-50bee42bdb57.png)
 
 Check if the data frame has any NA values
 ```
